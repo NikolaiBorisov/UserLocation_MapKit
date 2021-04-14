@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FAE18DE82626E5EA0073DECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE18DE72626E5EA0073DECC /* AppDelegate.swift */; };
 		FAE18DEA2626E5EA0073DECC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE18DE92626E5EA0073DECC /* SceneDelegate.swift */; };
-		FAE18DEC2626E5EA0073DECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE18DEB2626E5EA0073DECC /* ViewController.swift */; };
+		FAE18DEC2626E5EA0073DECC /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE18DEB2626E5EA0073DECC /* MapScreen.swift */; };
 		FAE18DEF2626E5EA0073DECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE18DED2626E5EA0073DECC /* Main.storyboard */; };
 		FAE18DF12626E5ED0073DECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE18DF02626E5ED0073DECC /* Assets.xcassets */; };
 		FAE18DF42626E5ED0073DECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE18DF22626E5ED0073DECC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		FAE18DE42626E5EA0073DECC /* User-Location Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User-Location Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE18DE72626E5EA0073DECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE18DE92626E5EA0073DECC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAE18DEB2626E5EA0073DECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAE18DEB2626E5EA0073DECC /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		FAE18DEE2626E5EA0073DECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE18DF02626E5ED0073DECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE18DF32626E5ED0073DECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		FAE18DE62626E5EA0073DECC /* User-Location Map */ = {
 			isa = PBXGroup;
 			children = (
-				FAE18DE72626E5EA0073DECC /* AppDelegate.swift */,
-				FAE18DE92626E5EA0073DECC /* SceneDelegate.swift */,
-				FAE18DEB2626E5EA0073DECC /* ViewController.swift */,
-				FAE18DED2626E5EA0073DECC /* Main.storyboard */,
-				FAE18DF02626E5ED0073DECC /* Assets.xcassets */,
-				FAE18DF22626E5ED0073DECC /* LaunchScreen.storyboard */,
-				FAE18DF52626E5ED0073DECC /* Info.plist */,
+				FAE18DFF2627045E0073DECC /* Controller */,
+				FAE18DFD262704410073DECC /* View */,
+				FAE18DFE2627044A0073DECC /* Supporting Files */,
 			);
 			path = "User-Location Map";
+			sourceTree = "<group>";
+		};
+		FAE18DFD262704410073DECC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE18DED2626E5EA0073DECC /* Main.storyboard */,
+				FAE18DF22626E5ED0073DECC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE18DFE2627044A0073DECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE18DE92626E5EA0073DECC /* SceneDelegate.swift */,
+				FAE18DE72626E5EA0073DECC /* AppDelegate.swift */,
+				FAE18DF02626E5ED0073DECC /* Assets.xcassets */,
+				FAE18DF52626E5ED0073DECC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE18DFF2627045E0073DECC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE18DEB2626E5EA0073DECC /* MapScreen.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE18DEC2626E5EA0073DECC /* ViewController.swift in Sources */,
+				FAE18DEC2626E5EA0073DECC /* MapScreen.swift in Sources */,
 				FAE18DE82626E5EA0073DECC /* AppDelegate.swift in Sources */,
 				FAE18DEA2626E5EA0073DECC /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHK3PT3MZR;
-				INFOPLIST_FILE = "User-Location Map/Info.plist";
+				INFOPLIST_FILE = "User-Location Map/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHK3PT3MZR;
-				INFOPLIST_FILE = "User-Location Map/Info.plist";
+				INFOPLIST_FILE = "User-Location Map/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
